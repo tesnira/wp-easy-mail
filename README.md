@@ -5,7 +5,7 @@
 ## 基本信息
 
 - 作者：`biancaplus`
-- 当前版本：`1.1.0`
+- 当前版本：`1.1.2`
 - WordPress：`6.0+`
 - PHP：`7.4+`
 - 许可证：[GPL-2.0-or-later](https://www.gnu.org/licenses/gpl-2.0.html)
@@ -130,6 +130,17 @@ WP Easy Mail 不内置 SMTP 服务，邮件通过 WordPress 原生 `wp_mail()` �
 编辑对应表单 →「表单设置」→ 选择「经典」或「卡片」模板并保存。
 
 ## 更新日志
+
+### 1.1.2
+
+- 优化前台资源加载：短代码渲染后于 footer 兜底入队；新增 `bootstrap.js`，兼容 Gutenberg Custom HTML、页面缓存或优化插件导致脚本漏载的场景。
+- 改进短代码检测（含区块 / 可复用区块），并完善前台表单提交、nonce 刷新与 reCAPTCHA 交互。
+- 修正后台字段可见/必填 checkbox 的保存与规范化逻辑。
+
+### 1.1.1
+
+- 优化表单字段保存。
+- 修复卡片模板居中样式。
 
 ### 1.1.0
 
